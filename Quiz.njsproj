@@ -27,6 +27,7 @@
     <Content Include="views\error.ejs" />
     <Content Include="views\index.ejs" />
     <Content Include="public\stylesheets\style.css" />
+    <Content Include="views\layout.ejs" />
     <Content Include="views\quizes\answer.ejs" />
     <Content Include="views\quizes\question.ejs" />
   </ItemGroup>
