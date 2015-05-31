@@ -22,7 +22,7 @@
     <Content Include="package.json" />
     <Compile Include="app.js" />
     <Compile Include="routes\index.js" />
-    <Compile Include="routes\users.js" />
+    <Content Include="public\favicon.ico" />
     <Content Include="views\error.ejs" />
     <Content Include="views\index.ejs" />
     <Content Include="public\stylesheets\style.css" />
