@@ -23,6 +23,7 @@
     <Compile Include="app.js" />
     <Compile Include="controllers\quiz_controller.js" />
     <Compile Include="routes\index.js" />
+    <Content Include="Procfile" />
     <Content Include="public\favicon.ico" />
     <Content Include="public\stylesheets\smartphone.css" />
     <Content Include="public\stylesheets\wide.css" />
