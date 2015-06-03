@@ -25,10 +25,8 @@
     <Compile Include="routes\index.js" />
     <Content Include="Procfile" />
     <Content Include="public\favicon.ico" />
-    <Content Include="public\images\author.jpg" />
     <Content Include="public\stylesheets\smartphone.css" />
     <Content Include="public\stylesheets\wide.css" />
-    <Content Include="views\author.ejs" />
     <Content Include="views\error.ejs" />
     <Content Include="views\index.ejs" />
     <Content Include="public\stylesheets\style.css" />
