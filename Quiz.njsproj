@@ -18,10 +18,13 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <ItemGroup>
+    <Content Include=".gitignore" />
     <Content Include="bin\www" />
     <Content Include="package.json" />
     <Compile Include="app.js" />
     <Compile Include="controllers\quiz_controller.js" />
+    <Compile Include="models\models.js" />
+    <Compile Include="models\quiz.js" />
     <Compile Include="routes\index.js" />
     <Content Include="Procfile" />
     <Content Include="public\favicon.ico" />
@@ -37,6 +40,7 @@
   <ItemGroup>
     <Folder Include="bin" />
     <Folder Include="controllers\" />
+    <Folder Include="models\" />
     <Folder Include="public" />
     <Folder Include="public\images" />
     <Folder Include="public\javascripts" />
