@@ -30,7 +30,7 @@ DATABASE_STORAGE=quiz.sqlite</Environment>
     <Compile Include="routes\index.js" />
     <Content Include="Procfile" />
     <Content Include="public\favicon.ico" />
-    <Content Include="public\images\1e2724c.jpg" />
+    <Content Include="public\images\author.jpg" />
     <Content Include="public\stylesheets\smartphone.css" />
     <Content Include="public\stylesheets\wide.css" />
     <Content Include="views\author.ejs" />
@@ -39,7 +39,8 @@ DATABASE_STORAGE=quiz.sqlite</Environment>
     <Content Include="public\stylesheets\style.css" />
     <Content Include="views\layout.ejs" />
     <Content Include="views\quizes\answer.ejs" />
-    <Content Include="views\quizes\question.ejs" />
+    <Content Include="views\quizes\index.ejs" />
+    <Content Include="views\quizes\show.ejs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin" />
