@@ -40,7 +40,9 @@ DATABASE_STORAGE=quiz.sqlite</Environment>
     <Content Include="views\layout.ejs" />
     <Content Include="views\quizes\answer.ejs" />
     <Content Include="views\quizes\index.ejs" />
+    <Content Include="views\quizes\new.ejs" />
     <Content Include="views\quizes\show.ejs" />
+    <Content Include="views\quizes\_form.ejs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin" />

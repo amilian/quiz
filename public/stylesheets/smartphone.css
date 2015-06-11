@@ -7,7 +7,7 @@
     content: "Smartphone Layout"
 }
 
-h2 span, section h3 {
+h2 span, section h3, .rem {
     display: none;
 }
 

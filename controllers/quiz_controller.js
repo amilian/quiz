@@ -39,3 +39,14 @@ exports.answer = function (req, res) {
         }
         res.render('quizes/answer', { quiz: req.quiz, respuesta: answer });   
 };
+
+exports.new = function (req, res) {
+    res.render('quizes/new', { quiz: { pregunta: "", respuesta: "" } });
+};
+
+exports.create = function (req, res) {
+    var quiz = models.Quiz.build(req.body.quiz);
+    quiz.save({ fields: ["pregunta", "respuesta"] }).then(function () {
+        res.redirect('/quizes');
+    });
+};
