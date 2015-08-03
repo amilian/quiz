@@ -24,7 +24,9 @@ DATABASE_STORAGE=quiz.sqlite</Environment>
     <Content Include="bin\www" />
     <Content Include="package.json" />
     <Compile Include="app.js" />
+    <Compile Include="controllers\comment_controller.js" />
     <Compile Include="controllers\quiz_controller.js" />
+    <Compile Include="models\comment.js" />
     <Compile Include="models\models.js" />
     <Compile Include="models\quiz.js" />
     <Compile Include="routes\index.js" />
@@ -39,6 +41,7 @@ DATABASE_STORAGE=quiz.sqlite</Environment>
     <Content Include="public\stylesheets\style.css" />
     <Content Include="views\layout.ejs" />
     <Content Include="views\quizes\answer.ejs" />
+    <Content Include="views\comments\new.ejs" />
     <Content Include="views\quizes\edit.ejs" />
     <Content Include="views\quizes\index.ejs" />
     <Content Include="views\quizes\new.ejs" />
@@ -56,6 +59,7 @@ DATABASE_STORAGE=quiz.sqlite</Environment>
     <Folder Include="routes" />
     <Folder Include="views" />
     <Folder Include="views\quizes\" />
+    <Folder Include="views\comments\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
