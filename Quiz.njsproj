@@ -26,6 +26,8 @@ DATABASE_STORAGE=quiz.sqlite</Environment>
     <Compile Include="app.js" />
     <Compile Include="controllers\comment_controller.js" />
     <Compile Include="controllers\quiz_controller.js" />
+    <Compile Include="controllers\session_controller.js" />
+    <Compile Include="controllers\user_controller.js" />
     <Compile Include="models\comment.js" />
     <Compile Include="models\models.js" />
     <Compile Include="models\quiz.js" />
@@ -47,6 +49,7 @@ DATABASE_STORAGE=quiz.sqlite</Environment>
     <Content Include="views\quizes\new.ejs" />
     <Content Include="views\quizes\show.ejs" />
     <Content Include="views\quizes\_form.ejs" />
+    <Content Include="views\sessions\new.ejs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin" />
@@ -58,6 +61,7 @@ DATABASE_STORAGE=quiz.sqlite</Environment>
     <Folder Include="public\stylesheets" />
     <Folder Include="routes" />
     <Folder Include="views" />
+    <Folder Include="views\sessions\" />
     <Folder Include="views\quizes\" />
     <Folder Include="views\comments\" />
   </ItemGroup>

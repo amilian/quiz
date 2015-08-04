@@ -25,3 +25,7 @@ footer {
     clear: both; 
     display: block
 }
+
+.right {
+    float: right;
+}
