@@ -28,6 +28,29 @@ app.use(session());
 app.use(methodOverride('_method'));
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+app.use(function (req, res, next) {
+    var lastAccess;
+    if (!req.session || !req.session.lastAccess) {
+        req.session.lastAccess = new Date();
+        lastAccess = req.session.lastAccess;
+    }
+    else {
+        lastAccess = new Date(req.session.lastAccess);
+    }
+     
+    var now = new Date();
+    var comp = now - lastAccess;
+    req.session.lastAccess = new Date();
+    if (comp > (2*60*1000) && req.session.user) {
+        res.redirect('/logout');
+    }
+    else {
+        next();
+    }
+    
+});
+
 app.use(function (req, res, next) {
     if (!req.path.match(/\/login|\/logout/)) {
         req.session.redir = req.path;
